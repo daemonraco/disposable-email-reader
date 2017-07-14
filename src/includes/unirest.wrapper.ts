@@ -5,7 +5,7 @@ import 'rxjs/add/operator/map';
 
 import * as unirest from "unirest"
 
-export class UnirestMask {
+export class UnirestWrapper {
     public get(url: string): Observable<any> {
         return Observable.create((observer: Observer<any>) => {
             unirest.get(url).end((response: any) => {
