@@ -1,6 +1,6 @@
 {
   "name": "disposable-email-reader",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A simple wrapper for some disposable email APIs.",
   "main": "lib/index",
   "types": "lib/index",

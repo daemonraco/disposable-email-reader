@@ -1,10 +1,12 @@
 export declare abstract class EmailWrapper {
+    protected data: any;
     raw: any;
     constructor(raw: any);
-    abstract body(): string;
-    abstract date(): string;
-    abstract from(): string;
-    abstract id(): string;
-    abstract subject(): string;
-    abstract to(): string;
+    body(): string;
+    date(): string;
+    from(): string;
+    id(): string;
+    subject(): string;
+    to(): string;
+    protected abstract load(): void;
 }

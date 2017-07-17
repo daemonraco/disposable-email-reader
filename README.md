@@ -2,6 +2,7 @@
 A simple wrapper for some disposable email APIs. At the moment it supports:
 * [Harakirimail.com](https://harakirimail.com)
 * [MailDrop.cc](https://www.maildrop.cc)
+* [Mailinator.com](http://www.mailinator.com)
 
 ## Installation
 This module uses NPM and can be added to your project running this command
@@ -34,11 +35,15 @@ myInbox.list().subscribe(listResponse => {
 });
 ```
 
-If you want to use _MailDrop_ instead of _HarakiriMail_, use this line:
+If you want to use something else instead of _HarakiriMail_, try one of these:
+*  _MailDrop_:
 ```js
 var myInbox = new reader.MailDrop('mytemporaryemail');
 ```
-
+*  _Mailinator_:
+```js
+var myInbox = new reader.Mailinator('mytemporaryemail');
+```
 
 ### Paging
 If you want to get only 5 emails, but starting from the third page, you can do
