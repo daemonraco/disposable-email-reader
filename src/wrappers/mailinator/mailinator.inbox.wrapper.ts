@@ -5,7 +5,7 @@ export class MailinatorInboxWrapper extends InboxWrapper {
         let out = [];
 
         for (let k in this.raw.messages) {
-            out.push(this.raw.messages[k]._id);
+            out.push(this.raw.messages[k].id);
         }
 
         return out;
